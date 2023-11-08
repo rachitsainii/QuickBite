@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "final",
+    "name": "final_project",
     "slug": "final",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.rachitsaini.final_project",
+      "config" : {
+        "googleMaps" : {
+          "apiKey" : "AIzaSyBmRgRLU_it-YYLZBOmaHqJQfi63774_U0"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ed059915-906a-41cb-a963-731abb6d32a6"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ed059915-906a-41cb-a963-731abb6d32a6"
     }
   }
 }

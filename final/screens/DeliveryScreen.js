@@ -2,7 +2,7 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import { featured } from '../constants';
 import { useNavigation } from '@react-navigation/native';
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import { themeColors } from '../theme';
 import * as Icon from 'react-native-feather';
 
@@ -13,6 +13,8 @@ export default function DeliveryScreen() {
         <View className="flex-1">
             {/* map view */}
         <MapView
+            provider={PROVIDER_GOOGLE}
+            showUserLocation={true}
             initialRegion={{
                 latitude: restaurant.lat,
                 longitude: restaurant.lng,
