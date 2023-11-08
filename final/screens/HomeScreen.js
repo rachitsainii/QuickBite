@@ -1,4 +1,4 @@
-import {View, Text, TextInput, ScrollView} from 'react-native';
+import {View, Text, TextInput, ScrollView, TouchableOpacity} from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
@@ -7,8 +7,10 @@ import { themeColors } from '../theme';
 import Categories from '../components/categories';
 import FeaturedRow from '../components/featuredRow';
 import { featured } from '../constants';
+import { useNavigation } from '@react-navigation/native';
 
 export default function HomeScreen() {
+    const navigation = useNavigation();
     return (
         <SafeAreaView className="bg-white">
             <StatusBar barStyle="dark-content"/>
@@ -24,6 +26,12 @@ export default function HomeScreen() {
                 </View>
                 <View style={{backgroundColor: themeColors.bgColor(1)}} className="p-3 rounded-full">
                     <Icon.Sliders height="20" width="20" strokeWidth={2.5} stroke="white" />
+                </View>
+                <View style={{backgroundColor: themeColors.bgColor(1)}} className="p-3 rounded-full">
+                    <TouchableOpacity onPress={()=> navigation.navigate('About')} >
+                        <Icon.Info height="20" width="20" strokeWidth={2.5} stroke="white" />
+                    </TouchableOpacity>
+                    
                 </View>
             </View>
 
