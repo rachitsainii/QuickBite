@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rachitsaini.final_project"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.rachitsaini.final_project",
-      "config" : {
+      "config": {
         "googleMaps" : {
           "apiKey" : "AIzaSyBmRgRLU_it-YYLZBOmaHqJQfi63774_U0"
         }
